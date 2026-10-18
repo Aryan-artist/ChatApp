@@ -1,0 +1,68 @@
+:root {
+  --bg-page: #0a0a0c;
+  --bg-card: #111113;
+  --bg-pill: #18181b;
+  --bg-chat: #08080a;
+  --bg-input: #08080a;
+  --border-card: #222226;
+  --border-subtle: #27272a;
+  --border-focus: #71717a;
+  --text-primary: #f4f4f5;
+  --text-secondary: #85858f;
+  --text-muted: #52525b;
+  --button-bg: #e4e4e7;
+  --button-text: #09090b;
+  --button-hover: #ffffff;
+  --bubble-bg: #1c1c22;
+  --bubble-text: #f4f4f5;
+  --bubble-me-bg: #1c1c22;
+  --bubble-me-text: #f4f4f5;
+  --bubble-other-bg: #1c1c22;
+  --bubble-other-text: #f4f4f5;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
